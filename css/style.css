@@ -1,0 +1,336 @@
+@import 'utilities.css';
+:root {
+  /* --primary: #3DCFD3; */
+  --primary: #ab6cd7;
+  --dark: #6e6e6e;
+  --pure: #FFFFFF;
+  --ternary: #898989;
+  --light: #F2F2F2;
+  --secondary: #070606;
+  --blue: #644ce0;
+  --green: #6dd580;
+  --backdrop: #fdf9f8;
+  --gold: #FFD700;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: var(--backdrop);
+}
+
+header {
+  background: var(--pure);
+  margin-bottom: -2rem;
+  margin-top: -2rem;
+  /* height: 800  px; */
+}
+header nav{
+  background: var(--pure);
+}
+
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+header nav .left a{
+  color: var(--dark);
+  text-decoration: none;
+  margin-right: 2rem;
+  /* text-transform: uppercase; */
+  transition: all .3s ease;
+  font-family: 'Lato', sans-serif;
+}
+header nav .left a:hover{
+  color: var(--primary)
+}
+header nav {
+  padding: 2rem 0;
+}
+header nav .right .wishlist{
+  align-items: center;
+  margin-right: 0.8rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--primary);
+  transition: all .3s ease;
+}
+header nav .right .wishlist:hover{
+  color: var(--green);
+  cursor: pointer;
+}
+
+header nav .branding{
+  margin-right: 3rem;
+}
+.grid-container{
+  background: var(--backdrop);
+  display: grid;
+  grid-template-columns: 702px 702px;
+  justify-content: center;
+  align-content: center;
+}
+.grid-container .items{
+  position: relative;
+}
+.grid-container .items .top{
+  align-items: center;
+  min-width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.grid-container .items .bottom{
+  width: max-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(100%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+}
+.grid-container .items h1{
+  text-align: center;
+  color: var(--pure);
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.new-arrivals .left .sale img{
+  max-width: 800px;
+  height:auto;
+}
+section .new-arrivals{
+  background: var(--backdrop);
+}
+section .new-arrivals .left{
+  margin-right: 4rem;
+  margin-top: 4rem;
+}
+section .new-arrivals .left .sale{
+  position: relative;
+}
+section .new-arrivals .left .texts{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  color: var(--pure);
+}
+section .new-arrivals .left .texts h1{
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 0.9;
+  margin-bottom: 5px;
+}
+section .new-arrivals .left .texts h1 span{
+  font-size: 5rem;
+  letter-spacing: 4px;
+}
+section .new-arrivals .left .texts h6{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 4px;
+}
+section .new-arrivals .left .texts h6{
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 1px;
+}
+section .right{
+  margin-top: 5rem;
+  margin-right: 1rem;
+}
+section .right .card{
+  background: var(--pure);
+  margin-right: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+section .right h1.section-heading{
+  text-transform: uppercase;
+  color: var(--blue);
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+section .right .card img{
+  width: 100%
+}
+section .right .card h2{
+  color: var(--dark);
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+section .right .card button{
+  background: var(--primary);
+  padding: 0.5rem 0.2rem;
+  font-size: 0.8rem;
+  width: 50%;
+  margin: 1rem 0.7rem;
+}
+section .workout{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+section .workout .left{
+  margin: 0;
+  padding: 2rem;
+  padding-left: 6rem;
+  padding-right: 0.5rem;
+  background: var(--primary);
+  width: 50%;
+}
+section .workout .right{
+  margin: 0;
+  padding: 2rem;
+  padding-right: 6rem;
+  padding-left: 0.5rem;
+  background: var(--primary);
+  width: 50%;
+}
+section .workout img{
+  border-radius: 10px;
+  width: 100%;
+}
+section .newforyou{
+  margin-top: 4rem;
+  width:75%;
+  margin: auto;
+}
+section .newforyou .one{
+  margin: 3rem;
+  padding: 0;
+  /* background: var(--primary); */
+}
+section .newforyou img{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+section .newforyou h1{
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--blue);
+  font-size: 3rem;
+}
+section .newforyou h2{
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary);
+  font-size: 1.9rem;
+}
+section .newforyou p{
+  text-align: center;
+  color: var(--dark);
+  font-size: .7rem;
+  margin-bottom: 1.5rem;
+}
+section .newforyou button{
+  color: var(--primary);
+  margin: auto;
+  padding: 0.5rem;
+  border: 1px solid;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+section .discount{
+  background: var(--primary);
+}
+section .discount .slider{
+  margin: auto;
+  width: 80%
+}
+section .discount .one{
+  margin: 0 2rem;
+}
+section .discount .one img{
+  margin: 4rem 1rem;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+section .discount h1{
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--pure);
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+section .discount .one .texts{
+  color: var(--pure);
+  margin-left: 1rem;
+}
+section .discount .one .texts h4{
+  font-size: 1rem;
+  font-weight: 100;
+}
+section .discount .one .texts h5{
+  font-weight: 100;
+}
+.fa-star {
+  color: var(--gold);
+  transition: all .3s solid;
+  margin-bottom: 3rem;
+}
+.fa-star:hover{
+  color: var(--primary);
+  cursor: pointer;
+}
+section .love-instagram{
+  margin: 4rem;
+}
+section .love-instagram h1{
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--blue);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+section .love-instagram .container-instagram{
+  margin: auto;
+  width: 60%;
+}
+section .love-instagram .container-instagram .one{
+  margin: 0;
+  padding: 0;
+}
+section .love-instagram .container-instagram .one img{
+  width: 100%
+}
+section .love-instagram .container-instagram{
+  position: relative;
+}
+section .love-instagram .container-instagram .texts{
+  color: var(--pure);
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+section .love-instagram .texts button{
+  background: var(--primary);
+  border: none;
+  padding: 0.5rem 0.2rem;
+  font-size: 0.8rem;
+  width: 50%;
+  margin: 1rem 0.7rem;
+}
+section .love-instagram .color-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  opacity:.6;
+  position: absolute;
+}
